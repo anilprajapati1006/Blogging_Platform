@@ -1,0 +1,196 @@
+// Container
+.container {
+    max-width: $max-width;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+//Text Styles 
+.x-large {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: 0.15rem;
+}
+
+.large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    color: #999;
+    margin-bottom: 1rem;
+}
+
+.textPrimary {
+    color: $primary-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.text-dark {
+    color: $dark-color;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-danger {
+    color: $danger-color    ;
+}
+
+.line {
+    height: 1px;
+     background: #fff;
+     margin: 1.5rem 0;
+}
+
+.rounded-img {
+  border-radius: 50%;
+}
+
+//Backgrounds 
+.bg {
+    &-primary {
+       @include set-background($primary-color);
+    }
+    &-dark {
+        @include set-background($dark-color);
+     }
+     &-light {
+        @include set-background($light-color);
+     }
+     &-danger {
+        @include set-background($danger-color);
+     }
+     &-success {
+        @include set-background($success-color);
+     }
+     &-white {
+        @include set-background(#fff);
+     }
+}
+
+//Buttons 
+.btn {
+    display: inline-block;
+    background: $primary-color;
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.12);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+
+    &.btn-primary {
+        @include set-background($primary-color);
+    }
+
+    &.btn-light {
+        @include set-background($light-color);
+    }
+
+    &.btn-dark {
+        @include set-background($dark-color);
+    }
+
+    &.btn-danger {
+        @include set-background($danger-color);
+    }
+
+    &.btn-success {
+        @include set-background($success-color);
+    }
+
+    &.btn-white {
+        @include set-background(#fff);
+    }
+
+    &:hover {
+        -webkit-animation: rubbrBand 1s ease-in-out;
+        animation:  rubberBand 1s ease-in-out;
+    }
+}
+
+// Badges
+.badge {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    text-align: center;
+    margin: 0.3rem;
+    background: $primary-color;
+    color: #fff;
+    border-radius: 0.2rem;
+
+    &.badge-primary {
+        @include set-background($primary-color);
+    }
+
+    &.badge-dark {
+        @include set-background($dark-color);
+    }
+
+    &.badge-success {
+        @include set-background($success-color);
+    }
+
+    &.badge-danger {
+        @include set-background($danger-color);
+    }
+
+    &.badge-light {
+        @include set-background($light-color);
+    }
+}
+
+.dark-overlay {
+    height: 100%;
+}
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    // width: 100%;
+
+    td, th {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    thead {
+        background: $light-color;
+        border-radius: 0.2rem;
+    }
+
+    .btn {
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+}
+
+.btn-dlt {
+    .btn{
+        color: #fff;
+    }
+}
+
+
+
+
+    

@@ -1,0 +1,357 @@
+// Media Query
+@media (max-width: 700px) {
+    .hide-sm {
+        display: none;
+    }
+
+    // Container
+    .container {
+        margin-top: 8rem;
+    }
+
+    .btn {
+        background: $dark-color !important;
+        border-radius: 1.5rem !important;
+    }
+
+    //Navabr 
+    .navbar {
+        display: block;
+        text-align: center;
+        // background: $dark-color;
+    }
+
+    ul {
+       justify-content: center; 
+       text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    //Landing 
+    .landing {
+        &Inner {
+            display: block;
+        }
+
+        &Text {
+            h1 {
+                font-size: 2.9rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            .buttons {
+                .btn-light {
+                    background: $light-color !important;
+                }
+            }
+        }
+    }
+
+    // Form (Register & Login)
+    .grid {
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .form {
+        &Group {
+            margin: 0.8rem 0;
+        }
+
+        &Text {
+            font-size: 0.7rem;
+        }
+    
+        .forgot {
+            text-align: right;
+        }
+
+        .btn {
+            font-size: 0.9rem;
+        }
+    
+        &SignUp, &SignIn {
+            padding: 1.5rem 1.2rem;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .innerText {
+                color: #999;
+                font-size: 1.3rem;
+            }
+        }
+        
+        input[type='text'],
+        input[type='email'],
+        input[type='password'],
+        input[type='date'],
+        select,
+        textarea {
+            padding: 0.5rem 0.6rem;
+            font-size: 0.9rem;
+        }
+    
+        input::placeholder {
+            color: #999;
+        }
+    }
+
+    .dashboard {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+
+        .trash {
+            background: none !important;
+        }
+
+        .table {
+            width: 100%;
+        }
+    }
+
+    .dash-buttons, .btn-dlt {
+        display: block;
+        text-align: center;
+        
+        .btn {
+            width: 100%;
+            // font-size: 0.9rem;
+        }
+
+        a {
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+    }
+
+    //Profiles
+    .profiles
+    {
+        h1 {
+            color: $dark-color;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+
+        .profile {
+            display: block;
+            text-align: center;
+            justify-content: center;
+    
+            ul {
+                display: none;
+            }
+    
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+    
+    //Profile
+    .profile-grid {
+        display: block;
+
+
+    h2 {
+        font-size: 1.4rem !important;
+    }
+
+    p {
+        font-size: 0.9rem !important;
+    }
+
+        .profile-top {
+            padding: 1rem !important;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            .icons a {
+                font-size: 0.9rem;
+                margin: 0 0.35rem !important;
+            }
+
+            img {
+                width: 230px !important;
+            }
+        }
+
+        .profile-about {
+
+            .skills {
+                display: block !important;
+                font-size: 0.9rem;
+            }
+        }
+
+        .profile-exp,
+        .profile-edu {
+            margin-bottom: 1rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+
+        .profile-github {
+            .repo-one,
+            .repo-two,
+            .repo-three {
+                display: block;
+                margin: 1rem 0;
+
+                h4 {
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    font-size: 0.8rem !important;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            h2 {
+                margin-top: 1.5rem;
+            }
+
+            .badge {
+                width: 100%;
+                border-radius: 3rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .btn-back {
+        background: $light-color !important;
+        font-size: 0.9rem;
+    }
+
+    //Create Profile 
+    .create-profile, .add-experince, .add-education {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .form {
+            padding: 0;
+        }
+
+        .btn {
+            width: 100% !important;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .btn-light {
+            background: $light-color !important;
+        }
+        .social-network-links {
+            margin: 1rem 0;
+        }
+
+        .social-input {
+            i {
+                width: 3.5rem !important;
+                padding: 0;
+                font-size: 1.8rem;
+            }
+            
+            input[type='text'] {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+
+    //Posts
+    .posts {
+        .post {
+            display: block;
+            justify-content: center;
+            padding-right: 0;
+    
+            h4 {
+                padding: 0.5rem 0;
+                color: $dark-color;
+            }
+        
+            p {
+                color: $dark-color;
+                font-size: 0.8rem;
+                // margin-top: 1rem;
+                text-align: center;
+            }
+        
+            & > div:first-child {
+                text-align: center;
+                background: $light-color;
+                padding: 1.5rem 0 1rem 0;
+            }
+
+            .btn {
+                text-align: center;
+            }
+
+            .btn-light {
+                background: $primary-color !important;
+                color: #fff;
+            }
+
+            .btn-ld {
+                display: flex;
+            }
+
+            .post-desc{
+                padding: 1rem;
+            } 
+
+        }
+    }
+
+    .add-posts {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+
+        .post-form {
+            .post-form-header {
+                h3 {
+                    font-size: 1rem;
+                }
+            } 
+
+            .btn {
+                width: 100% !important;
+                font-size: 1rem;
+            }
+        }
+    }
+}

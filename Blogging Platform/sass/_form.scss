@@ -1,0 +1,138 @@
+.grid {
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    // height: 80vh;
+}
+// .signIn
+// {
+//     grid-template-columns: repeat(2, 1fr);
+// }
+.form {
+    &Group {
+        margin: 1.2rem 0;
+    }
+    &Text {
+        display: block;
+        margin-top: 0.3rem;
+        color: #999;
+        text-align: left;
+    }
+
+    .forgot {
+        text-align: right;
+    }
+
+    &SignUp, &SignIn {
+        padding: 1.5rem 2rem;
+        border-radius: 0.2rem;
+        background: $light-color;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0 8px 8px rgba(0,0,0,0.12);
+        // height: 100%;
+
+        .btn {
+            width: 100%;
+            // padding-top: 0.8rem;
+            // padding-bottom: 0.8rem;
+        }
+    }
+
+    &SignUpImg {
+        background: none;
+        width: 100%;
+    }
+
+    &SignInImg {
+        height: 100%;
+    }
+
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    input[type='date'],
+    select,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0.7rem;
+        font-size: 1rem;
+        border: none;
+        background: #fff;
+        border-radius: 0.2rem;
+        color: $primary-color;
+        outline: none;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12);
+    }
+
+    input::placeholder {
+        color: #999;
+    }
+
+}
+
+.innerText {
+    color: $dark-color;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.para {
+    color: $dark-color;
+}
+
+.para  a{
+    color: $primary-color;
+}
+
+.create-profile, .add-experince, .add-education, .add-posts {
+    .form {
+        input[type='text'],
+        input[type='date'],
+        select,
+        textarea {
+            background: rgba(0, 0, 0, 0.05);
+            box-shadow: 1.5px 1.5px rgba(0,0,0,0.12);
+        }
+
+        .social-input {
+            display: flex;
+
+            input[type='text'] {
+                padding-left: 1rem;
+            }
+
+            i {
+                padding: 0.5rem;
+                width: 4rem;
+
+                &.fa-twitter {
+                    color: #38a1f3;
+                }
+
+                &.fa-facebook-square {
+                    color: #3b5998;
+                }
+
+                &.fa-instagram {
+                    background: -webkit-linear-gradient(#3D6BE2, #E24F80, #FDD679);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                &.fa-youtube {
+                    color: #c4302b;
+                }
+
+                &.fa-linkedin {
+                    color: #0077b5;
+                }
+            }
+        }
+    }
+    
+}
